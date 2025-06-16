@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "id": "siva2411-ext-usr",
+  "name": "Test Usr Extension",
+  "version": "1.0.7",
+  "publisher": "siva2411-ext-usr",
+
+  "targets": [
+    { "id": "Microsoft.VisualStudio.Services" }
+  ],
+
+  "description": "Displays a welcome message on user-story work items.",
+  "categories": ["Azure Boards"],
+
+  "icons": {
+    "default": "src/icon.png"
+  },
+
+  "files": [
+    {
+        "path": "src",
+        "addressable": true
+    }
+  ],
+
+  "contributions": [
+    {
+      "id": "welcome-panel",
+      "type": "ms.vss-work-web.work-item-form-group",
+      "targets": ["ms.vss-work-web.work-item-form"],
+      "properties": {
+        "name": "Welcome Panel",
+        "uri": "src/welcome.html",
+        "height": 140
+      }
+    }
+  ]
+}
