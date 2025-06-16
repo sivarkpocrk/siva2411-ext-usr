@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "siva2411-ext-usr",
   "name": "Test Usr Extension",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "publisher": "siva2411-ext-usr",
 
   "targets": [
@@ -25,13 +25,13 @@
 
   "contributions": [
     {
-      "id": "welcome-panel",
+      "id": "Test-AI-Gen-Panel",
       "type": "ms.vss-work-web.work-item-form-group",
       "targets": ["ms.vss-work-web.work-item-form"],
       "properties": {
-        "name": "Welcome Panel",
+        "name": "Test AI Gen Panel",
         "uri": "src/welcome.html",
-        "height": 140
+        "height": 160
       }
     }
   ]
